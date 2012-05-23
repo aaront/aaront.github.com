@@ -74,6 +74,17 @@ div#main header > h2 {
 	font-weight: 100;
 }
 
+div#main header > h3 {
+	font-size: 2.1em;
+	line-height: 1.3em;
+	font-weight: 100;
+	color: #124c6f;
+}
+
+div#main header > h3 a {
+	color: #165b85;
+}
+
 @media screen and (max-width: 800px) {
 	div#main header > h2 {
 		font-size: 3.5em;
