@@ -6,7 +6,8 @@
 
 body {
 	color: #fff;
-	font-family: "Exo";
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #0B2E43;
 }
 
 abbr[title] {
@@ -45,10 +46,10 @@ div#main * {
 }
 
 div#main {
-	position: fixed;
-	top: 20%;
-	width: 90%;
-	left: 1%;
+	position: absolute;
+    padding: 10% 10% 0 4%;
+	perspective: 800px;
+   	perspective-origin: 50% 200px;
 	/*margin: 0 0 0 -350px;*/
 }
 
@@ -60,33 +61,65 @@ div#main header > h1, div#main header > h2 {
 }
 
 div#main header > h1 {
-	font-size: 1.8em;
+	font-size: 1.9em;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	margin-bottom: 15px;
 	line-height: 1em;
 	margin-left: .5%;
+	transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
 }
 
 div#main header > h2 {
 	font-size: 4.6em;
 	line-height: 1.4em;
-	font-weight: 100;
+	font-weight: 200;
+	transform: rotate(-5deg) translate(20px);
+    -webkit-transform: rotate(-5deg) translate(20px);
 }
 
 div#main header > h3 {
-	font-size: 2.1em;
+	font-size: 1.8em;
 	line-height: 1.3em;
-	font-weight: 100;
+	font-weight: 200;
 	color: #124c6f;
+    opacity: 0.6;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    float: right;
+    margin-left: 40px;
 }
 
 div#main header > h3 a {
 	color: #165b85;
 }
 
+span.italicize {
+    font-style: italic;
+}
+
 @media screen and (max-width: 800px) {
 	div#main header > h2 {
 		font-size: 3.5em;
 	}
+
+    div#main header > h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div#main header > h2 {
+        font-size: 2.3em;
+    }
+
+    div#main header > h3 {
+        font-size: 0.7em;
+        color: #fff;
+    }
+
+    div#main {
+        padding-top: 10%;
+    }
 }
